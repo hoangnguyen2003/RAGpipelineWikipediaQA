@@ -7,5 +7,5 @@ def get_wikipedia_content(topic):
     except wikipedia.exceptions.PageError:
         return None
     except wikipedia.exceptions.DisambiguationError as e:
-        print(f"Ambiguous topic. Please be more specific. Options: {e.options}")
+        print(f'Ambiguous topic. Please be more specific. Options: {e.options}')
         return None
